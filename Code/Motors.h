@@ -1,14 +1,14 @@
-#include <Arduino.h>
+#include <Arduino.h> 
 
 class Motors {
  public:
-   void forward(int vel);
-   void backward();
-   void accelerateRight(int velocity);
-   void accelerateLeft(int velocity);
-   void left();
-   void right();
-   void attach(int pin1, int pin2, int pin3, int pin4);
+   void forward(int vel); //Вперед
+   void backward(); //Назад
+   void accelerateRight(int velocity); //Плавно направо
+   void accelerateLeft(int velocity); //Плавно налево
+   void left(); //Резко налево
+   void right(); //Резко направо
+   void attach(int pin1, int pin2, int pin3, int pin4); //Подключение
    Motors();
  private:
    void go(int velocity, int right, int left);
