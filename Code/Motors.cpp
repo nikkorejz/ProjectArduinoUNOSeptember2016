@@ -8,6 +8,8 @@
 
 #define K_BREAK_SPEED 4
 
+/*Комментарии идентичны в Sensors.cpp*/
+
 Motors::Motors() {
   
 }
